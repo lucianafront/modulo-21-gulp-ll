@@ -30,12 +30,12 @@ function tarefasCSS(cb) {
 function tarefasJS(callback){
 
          gulp.src([
-            '../node_modules/jquery/dist/jquery.js',
-            '../node_modules/bootstrap/dist/js/bootstrap.js',
-            './vendor/owl/js/owl.js',
-            './vendor/jquery-mask/jquery.mask.js',
-            './vendor/jquery-ui/jquery-ui.js',
-            './src/js/custom.js'
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/bootstrap/dist/js/bootstrap.js',
+            'vendor/owl/js/owl.js',
+            'vendor/jquery-mask/jquery.mask.js',
+            'vendor/jquery-ui/jquery-ui.js',
+            'src/js/custom.js'
         ])
         .pipe(stripJs())                    // remove comentários
         .pipe(concat('scripts.js'))         // mescla arquivos
