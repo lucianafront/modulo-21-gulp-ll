@@ -51,4 +51,12 @@ Todo o processo é executado a partir node.JS e Gulp-cli (linha de comando)
 - Diminuição do tamanho (bytes) de imagens
 
 
+# Execução do projeto
+npm install
+http-server ./dist
+gulp
+
+
+
+
 
