@@ -21,12 +21,9 @@ function tarefasCSS(cd) {
       "./vendor/jquery-ui/jquery-ui.css",
       "./src/css/style.css",
     ])
-    .pipe(babel({
-      comments: false,
-      presets: ['@balel/env']
-    }))
+
     .pipe(stripCss()) // remove comentários
-    .pipe(concat("style.css")) // mescla arquivos
+    .pipe(concat("styles.css")) // mescla arquivos
     .pipe(cssmin()) // minifica css
     .pipe(rename({ suffix: ".min" })) // styles.min.css
     .pipe(gulp.dest("./dist/css")); // cria arquivo em novo diretório
