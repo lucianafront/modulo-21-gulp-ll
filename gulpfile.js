@@ -82,7 +82,7 @@ function tarefasHtml(callback) {
 }
 gulp.task('serve',function(){
   browserSync.init({
-    Server:{
+    server:{
        baseDir: "./dist"
     }
   })
